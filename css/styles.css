@@ -168,6 +168,15 @@ text-transform: uppercase;
     fill: var(--primary-color); 
 }
 
+.icon--white {
+    fill: white;
+}
+
+.icon--small {
+    width: 30px;
+    height: 30px;
+}
+
 .icon-container {
     align-items: center;
     background: #f3f9fa;
@@ -176,7 +185,10 @@ text-transform: uppercase;
     height: 64px;
     justify-content: center;
     width: 64px;
-    
+}
+
+.icon-container--accent {
+    background: var(--accent-color);
 }
 
 /* Buttons */
@@ -236,6 +248,11 @@ text-transform: uppercase;
 .btn--outline:hover {
     background: var(--headings-color);
     color: #fff;
+}
+
+.btn--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 
@@ -437,4 +454,98 @@ text-transform: uppercase;
     }
 }
 
+/* Grids */
 
+.grid {
+    display: grid;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .grid--1x2 {
+        grid-template-columns: 1fr 1fr;
+        /* sets up side by side grid if tablet or above */
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+    .grid--1x3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Testimonials */
+.testimonial {
+    padding: 3rem;
+}
+
+.testimonial__image {
+    position: relative;
+}
+
+.testimonial__image > img {
+width: 100%;
+}
+
+.testimonial__image > .icon-container {
+    position: absolute; 
+    top: 3rem;
+    right: -32px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial .quote,
+    .testimonial .quote__author
+
+    {
+        font-size: 2.4rem;
+    }
+
+    .testimonial .quote {
+        margin-left: 6rem;
+    }
+}
+
+/* Callouts */
+
+.callout {
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.callout__heading {
+    color: white;
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.callout .btn {
+    justify-self: center;
+    align-self: center;
+}
+
+.callout__content {
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
+    }
+    .callout__content {
+        text-align: left;
+    }
+
+    .callout .btn {
+        justify-self: start;
+        margin: 0 2rem;
+    }
+}
