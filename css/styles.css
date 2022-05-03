@@ -126,10 +126,12 @@ text-transform: uppercase;
     color: white;
     padding: .5rem 1.5rem;
 }
+.badge__height {
+    height: 40px;
+}
 
 @media screen and (min-width: 1024px) {
     .badge--small {
-
         font-size: 1.2rem;
     }
 }
@@ -206,11 +208,19 @@ text-transform: uppercase;
     font-size: 1.8rem;
     font-weight: 600;
     margin: 1rem 0;
-    padding: 2rem 3rem;
+    /* padding: 2rem 3rem; */
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
+    outline: none;
 
+}
+
+.btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 
 .btn--primary {
@@ -263,7 +273,7 @@ text-transform: uppercase;
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .btn {
         font-size: 1.5rem;
     }
@@ -283,25 +293,28 @@ text-transform: uppercase;
     color: #cdcbd7;
 }
 
-.input--group {
+.input-group {
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     display: flex;
 }
 
-.input--group .input {
+.input-group .input {
     border: 0;
     flex-grow: 1;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
 }
 
-.input--group .btn {
+.input-group .btn {
     margin: 4px;
 }
 
 @media screen and (min-width: 1024px) {
     .input {
         font-size: 1.5rem;
+    }
+    .btn {
+         padding: 2rem 3rem;
     }
 }
 
@@ -599,7 +612,7 @@ width: 100%;
 .block {
     --padding-vertical: 6rem; 
     padding: var(--padding-vertical) 2rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .block__heading {
@@ -700,9 +713,59 @@ width: 100%;
 }
 
 /* Hero */
+
+.hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
 .hero__tagline {
     font-size: 2rem;
     color: #b9c3cf;
     letter-spacing: 1px;
     margin: 2rem 0 5rem;
+}
+
+.hero__image {
+    width: 100%;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .hero__content {
+        text-align: left;
+        align-self: center;
+    }
+
+    .hero {
+        padding-top: 0;
+    }
+}
+
+/* Domain Block */
+
+.block-domain .input-group {
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: none;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+
+.block-domain__prices {
+    display: grid;
+    font-size: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    font-weight: 600;
+    justify-items: center;
+    max-width: 700px;
+    margin: 3rem auto; 
+    
+
+}
+
+@media screen and (min-width: 768px) {
+    .block-domain__prices {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
 }
