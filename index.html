@@ -4,68 +4,44 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Moshify</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <title>Document</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles.css"></head>
-    <script src="main.js"></script>
-    <body class="color__black">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
 
-        <section class="block block--dark block--skewed-right block-showcase">
-            <header class="block__header">
-                <h2>User-friendly Control Panel</h2>
-            </header>
-            <div class="container grid grid--1x2">
-                <picture class="block-showcase__image">
+        <div class="card testimonial">
+            <div class="grid grid--1x2">
+                <div class="testimonial__image">
+                    <img src="images/testimonial.jpg" alt="A happy, smiling customer"/>
+                    <span class="icon-container icon-container--accent">
+                        <svg class="icon icon--white icon--small">
+                            <use xlink:href="images/sprite.svg#quotes"></use>
+                        </svg>
+                    </span>
+                </div>
+                <blockquote class="quote">
+                    <p class="quote__text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio
+                                                                                                                                                                                                                                                                                                                                                                                                                officiis dolore earum error eaque perferendis laudantium sed praesentium
+                                                                                                                                                                                                                                                                                                                                                                                                 dolorum.
+                    </p>
+                    <footer>
+                        <div class="media">
 
-                    <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"/>
-                    <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x"/>
-                    <img class="block-showcase__image" src="images/ipad.png" alt="">
-                </picture>
-                <ul class="list">
-                    <li>
-                        <div class="media">
                             <div class="media__image">
-                                <svg class="icon icon--primary">
-                                    <use xlink:href="images/sprite.svg#snap"></use>
+                                <svg class="icon icon--primary quote__line">
+                                    <use xlink:href="images/sprite.svg#line"></use>
                                 </svg>
                             </div>
-                            <div class="media__body">
-                                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat est ut ipsa, delectus sit officia natus ad aliquam et nam quo magni molestias aperiam. Eum, odit alias. Earum, neque</p>
+                            <div class="media__body" style=>
+                                <h3 class="media__title quote__author">John Smith</h3>
+                                <p class="quote__organization">ABC Company</p>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="media">
-                            <div class="media__image">
-                                <svg class="icon icon--primary">
-                                    <use xlink:href="images/sprite.svg#snap"></use>
-                                </svg>
-                            </div>
-                            <div class="media__body">
-                                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat est ut ipsa, delectus sit officia natus ad aliquam et nam quo magni molestias aperiam. Eum, odit alias. Earum, neque</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media">
-                            <div class="media__image">
-                                <svg class="icon icon--primary">
-                                    <use xlink:href="images/sprite.svg#snap"></use>
-                                </svg>
-                            </div>
-                            <div class="media__body">
-                                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat est ut ipsa, delectus sit officia natus ad aliquam et nam quo magni molestias aperiam. Eum, odit alias. Earum, neque</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                    </footer>
+                </blockquote>
             </div>
-        </section>
+        </div>
     </body>
 </html>
