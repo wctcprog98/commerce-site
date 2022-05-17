@@ -106,11 +106,13 @@ a {
 /* Badges */
 
 .badge {
-  border-radius: 20px;
+  border-radius: 30px;
   font-size: 2rem;
   font-weight: 600;
+  height: 30px;
   padding: 0.5rem 2rem;
   white-space: nowrap;
+
 }
 
 .badge--primary {
@@ -164,6 +166,10 @@ a {
     padding-left: 0;
   }
 }
+
+.list .block-domain__prices {
+  padding-top: 3rem;
+}
 /* Icons */
 .icon {
   height: 40px;
@@ -206,7 +212,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -272,7 +278,11 @@ a {
     font-size: 1.5rem;
   }
 }
-
+@media screen and (max-width: 450px) {
+  .btn {
+    padding: 2rem 4vh;
+  }
+}
 /* Inputs */
 .input {
   border-radius: var(--border-radius);
@@ -297,6 +307,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -308,6 +319,7 @@ a {
     font-size: 1.5rem;
   }
 }
+
 /* Cards */
 .card {
   border-radius: 7px;
@@ -626,6 +638,7 @@ a {
   color: #7b858b;
 }
 
+
 .block--dark h1,
 .block--dark h2,
 .block--dark h3 {
@@ -744,13 +757,13 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 4rem auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -847,11 +860,12 @@ a {
   .footer__brand img {
     /* TODO: Consider adding to all images */
     width: 100%;
+    max-width: 230px;
   }
 
   .footer__copyright {
     color: #fff;
-    font-size: 2.1rem; 
+    font-size: 1.6rem; 
     opacity: .3;
   }
 
