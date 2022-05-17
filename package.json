@@ -1,0 +1,24 @@
+{
+  "name": "commerce-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wctcprog98/commerce-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wctcprog98/commerce-site/issues"
+  },
+  "homepage": "https://github.com/wctcprog98/commerce-site#readme",
+  "devDependencies": {
+    "parcel": "^2.5.0",
+    "parcel-bundler": "^1.12.3"
+  }
+}
