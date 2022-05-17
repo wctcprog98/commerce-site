@@ -827,8 +827,63 @@ a {
     text-align: center;
   }
 
+  .footer__brand img {
+    /* TODO: Consider adding to all images */
+    width: 100%;
+  }
+
   .footer__copyright {
     color: #fff;
     font-size: 2.1rem; 
+    opacity: .3;
   }
+
+  @media screen and (min-width: 768px) {
+    .footer__section {
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
+  }
+
+  .footer .collapsible_content {
+    opacity: 1;
+    max-height: 100%
+  }
+
+  .footer__brand {
+    margin-top: 1rem;
+    order: -1;
+  }
+  .footer a {
+    color: #777;
+  }
+
+  footer a:hover {
+    color: #fff;
+    transition: color .3s;
+  }
+
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+
+  .footer__section {
+    border: none;
+    padding: 2.3rem;
+  }
+  .footer__section .list {
+    margin: 0;
+  }
+
+  .footer__heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+  } 
+
+
+
+
 
