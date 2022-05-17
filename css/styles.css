@@ -817,15 +817,22 @@ a {
     background: #232323;
   }
 
+  .footer a {
+    color: #777;
+  }
+
+    footer a:hover {
+    color: #fff;
+    transition: color .3s;
+  }
+
   .footer__section {
-    border-bottom: 1px solid #393939;
+    border: 0;
+    /* border-bottom: 1px solid #393939; */
     padding: 2rem;
   }
 
-   .footer__section {
-    border: none;
-    padding: 2.3rem;
-  }
+
   .footer__section .list {
     margin: 0;
   }
@@ -858,27 +865,13 @@ a {
   .footer .collapsible__content {
     max-height: 100%;
     opacity: 1;
-  }
-  }
-
-
-
-  .footer a {
-    color: #777;
-  }
-
-  footer a:hover {
-    color: #fff;
-    transition: color .3s;
-  }
-
-  .footer__copyright {
-    font-size: 1.5rem;
+     }
   }
 
   .footer__heading {
     font-weight: 600;
     text-transform: uppercase;
+    font-size: 1.6rem;
   } 
 
 
