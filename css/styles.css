@@ -273,6 +273,10 @@ a {
   display: inline-block;
 }
 
+.card__button--background {
+  text-align: right;
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
@@ -350,6 +354,9 @@ a {
   background: #02cdf1;
 }
 
+.card__button--background {
+  background: var(--color-primary);
+}
 /* Plans */
 .plan {
   transition: transform 0.2s ease-out;
@@ -529,6 +536,7 @@ a {
   top: 3rem;
   right: -32px;
 }
+
 
 @media screen and (min-width: 768px) {
   .testimonial__image {
@@ -835,7 +843,7 @@ a {
     color: #777;
   }
 
-    footer a:hover {
+    .footer a:hover {
     color: #fff;
     transition: color .3s;
   }
